@@ -171,6 +171,8 @@ doctor_phone = Label(f2, text="Phone:", font="roboto 15")
 doctor_phone.grid(row=7, column=0, padx=20, pady=5)
 doctor_phoneentry = Entry(f2, font="roboto 15").grid(row=7, column=1, padx=20, pady=5)
 
+# Something else to be added here
+
 
 root.mainloop()
 
