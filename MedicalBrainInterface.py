@@ -2,7 +2,7 @@ from tkinter import *
 
 root = Tk()
 
-root.geometry("1750x936")
+root.geometry("1200x890")
 root.title("Medical Brain - AstroDestroyer")
 
 f0 = Frame()
@@ -19,11 +19,11 @@ label0.pack(pady=2)
 
 
 # Patient details heading
-label1 = Label(f0, text="Patient details", fg="black", font="roboto 17 bold", padx=570, pady=5, borderwidth=7, relief=SUNKEN)
+label1 = Label(f0, text="Patient details", fg="black", font="roboto 17 bold", padx=295, pady=5, borderwidth=7, relief=SUNKEN)
 label1.pack(side=LEFT, padx=10, pady=10)
 
 # Doctor details heading
-label2 = Label(f0, text="Doctor details", fg="black", font="roboto 17 bold", padx=127, pady=5, borderwidth=7, relief=SUNKEN)
+label2 = Label(f0, text="Doctor details", fg="black", font="roboto 17 bold", padx=112, pady=5, borderwidth=7, relief=SUNKEN)
 label2.pack(side=LEFT, padx=10, pady=10)
 
 
@@ -119,21 +119,6 @@ hospitalization = Label(f1, text="History of Current Medication for any illness:
 hospitalization.grid(row=18, column=0, padx=20, pady=5)
 hospitalizationentry = Entry(f1, font="roboto 15").grid(row=18, column=1, padx=20, pady=5)
 
-# Vaccinate variable declaration
-vaccinate_var = StringVar()
-vaccinate_var.set("Don't vaccinate")
-
-# What vaccination do you want
-vaccinate_now = Label(f1, text="Vaccinate now for:", font="roboto 15")
-vaccinate_now.grid(row=19, column=0, padx=20, pady=5)
-# Vaccination choices for you
-Radiobutton(f1, text="Chicken Pox", font="roboto 12", variable=vaccinate_var, value="Chicken Pox").grid(row=19, column=3)
-Radiobutton(f1, text="Hepatitis A", font="roboto 12", variable=vaccinate_var, value="Hepatitis A").grid(row=19, column=4)
-Radiobutton(f1, text="Hepatitis B", font="roboto 12", variable=vaccinate_var, value="Hepatitis B").grid(row=19, column=5)
-Radiobutton(f1, text="Typhoid", font="roboto 12", variable=vaccinate_var, value="Typhoid").grid(row=19, column=6)
-Radiobutton(f1, text="TT", font="roboto 12", variable=vaccinate_var, value="TT").grid(row=19, column=7)
-Radiobutton(f1, text="Cholera", font="roboto 12", variable=vaccinate_var, value="Cholera").grid(row=19, column=8)
-
 
 
 # Enter the doctor's name
@@ -175,4 +160,3 @@ doctor_phoneentry = Entry(f2, font="roboto 15").grid(row=7, column=1, padx=20, p
 
 
 root.mainloop()
-
